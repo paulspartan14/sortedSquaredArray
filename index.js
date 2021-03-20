@@ -6,7 +6,6 @@ function sortedSquaredArray(array){
   for (let idx = array.length - 1; idx >= 0; idx --){
     let smallValue = array[smallValueIndex]
     let largeValue = array[largeValueIndex]
-    
     // si el valor de hasta la izq es mayor al de la derecha agregalo al final
     if(Math.abs(smallValue) > Math.abs(largeValue)){
       sortedSqueres[idx] = smallValue * smallValue
@@ -19,9 +18,9 @@ function sortedSquaredArray(array){
   }
   return sortedSqueres  
 }
-
 // Do not edit the line below.
 exports.sortedSquaredArray = sortedSquaredArray;
 
+ //show solve
 console.log(sortedSquaredArray([-7,-1,3,5,8,10]))
 // user@ubuntu$: [ 1, 9, 25, 49, 64, 100 ]
